@@ -1,0 +1,171 @@
+extends base
+
+block content
+    section.section-equipaments
+        .content-box.content-box--bike-version
+            .u-center-text
+                h1.heading-secondary.u-margin-bottom-medium
+                    | Nossos acessórios
+            ul.ac-list.u-margin-bottom-big
+                li Capacetes
+                li Luvas
+                li Óculos de segurança
+                li Sapatilhas
+                li Calça Acolchoada
+                li Mochila de Hidratação
+            p.default-text.paragraph
+                | Antes de fazer pedais longões, é importante ter os equipamentos
+                | básicos de segurança e conforto. Aqui na Nigo você pode encontrar uma
+                | variedade deles, e desse modo você pode desfrutar de um pedal mais
+                | agradável e seguro.
+    section.section-about
+        .u-center-text.u-margin-bottom-medium
+            h2.heading-secondary.u-center-text.u-margin-bottom-medium
+                | Duas marcas de excelência
+        .row
+            .col-1-of-2
+                .u-box-column.u-box-column__start.u-margin-bottom-medium
+                    h3.heading-tertiary.u-margin-bottom-small Sense Bikes
+                    p.paragraph.default-text
+                        | A Sense Bikes é uma prestigiada marca de bicicletas, e já ganhou o
+                        | prêmio de Melhor Bicicleta Nacional. Ela possui a sua linha de
+                        | produção em Manaus, onde atende os padrões rígidos de segurança e
+                        | qualidade.
+                    a.btn__default(href="https://sensebike.com.br/") Saiba mais →
+                .u-box-column.u-box-column__start
+                    h3.heading-tertiary.u-margin-bottom-small Oggi Bikes
+                    p.paragraph.default-text
+                        | A Oggi é uma marca de bicicletas com desenvolvimento e fabricação
+                        | na Zona Franca de Manaus, com peças e componentes importados. A
+                        | Itália é fonte de inspiração para o design de suas bikes.
+                    a.btn__default(href="#") Saiba mais → 
+            .col-1-of-2
+                .composition
+                    img.composition__photo.composition__photo--p1(alt="Photo 1" src="./img/oggi-bike.jpg")
+                    img.composition__photo.composition__photo--p2(alt="Photo 2" src="./img/sense-bike.jpg")
+                    img.composition__photo.composition__photo--p3(alt="Photo 3" src="./img/sense-2.jpg")
+    section#models.models
+        .u-center-text.u-margin-bottom-medium
+            h2.heading-secondary.u-center-text.u-margin-bottom-medium
+                | confira nossos modelos
+        br
+        .u-box-column(style="padding: 4.6rem 0;  border-top: 0.05rem solid rgb(194, 194, 194);  ")
+            h1.heading-forth Sense Bikes
+            #card-row.u-box-row(style="justify-content: space-between; padding: 3rem 0; width: 100%;")
+                .card
+                    .card__side.card__side--front
+                        .card__picture.card__picture--1  
+                        h4.card__heading
+                            span.card__heading-span.card__heading-span--1 Impact Sl 2020
+                        .card__details
+                            ul
+                                li 12 marchas
+                                li Aro 29
+                                li Quadro de Alumínio
+                                li Suspensão Dianteira
+                                li Peso 12.1kg
+                    .card__side.card__side--back.card__side--back-1
+                        .card__cta
+                            .card__price-box
+                                p.card__price-only Apenas
+                                p.card__price-value $6.490
+                            a.btn.btn--white(href="#popup") Peça Agora
+                // CARD-2
+                .card
+                    .card__side.card__side--front
+                        .card__picture.card__picture--2  
+                        h4.card__heading
+                            span.card__heading-span.card__heading-span--2 Fun 2019
+                        .card__details
+                            ul
+                                li 12 marchas
+                                li Aro 29
+                                li Câmbio Traseiro Shimano m360
+                                li Suspensão RST Blaze 100mm
+                                li Peso 14.8kg
+                    .card__side.card__side--back.card__side--back-2
+                        .card__cta
+                            .card__price-box
+                                p.card__price-only Apenas
+                                p.card__price-value $2.490
+                            a.btn.btn--white(href="#popup") Peça Agora
+                // CARD-3
+                .card
+                    .card__side.card__side--front
+                        .card__picture.card__picture--3  
+                        h4.card__heading
+                            span.card__heading-span.card__heading-span--3 One 2020
+                        .card__details
+                            ul
+                                li 12 marchas
+                                li Aro 29
+                                li Câmbio Traseiro Shimano RD TY500
+                                li Suspensão RST Gila 100mm
+                                li Peso 14.7kg
+                    .card__side.card__side--back.card__side--back-3
+                        .card__cta
+                            .card__price-box
+                                p.card__price-only Apenas
+                                p.card__price-value $2.290
+                            a.btn.btn--white(href="#popup") Peça Agora
+        .u-box-column(style="padding: 4.6rem 0; border-top: 0.05rem solid rgb(194, 194, 194);  border-bottom: 1px solid rgb(194, 194, 194);")
+            h1.heading-forth Oggi Bikes
+            #card-row.u-box-row(style="justify-content: space-between; padding: 3rem 0; width: 100%;")
+                .card
+                    .card__side.card__side--front
+                        .card__picture.card__picture--4  
+                        h4.card__heading
+                            span.card__heading-span.card__heading-span--4 Hacker Sport
+                        .card__details
+                            ul
+                                li 21 marchas
+                                li Aro 29
+                                li Ideal para Mountain Bike
+                                li
+                                    | Tamanho
+                                    | 15.5" / 17" / 19"
+                                li Peso 14.5kg
+                    .card__side.card__side--back.card__side--back-4
+                        .card__cta
+                            .card__price-box
+                                p.card__price-only Apenas
+                                p.card__price-value $2.000
+                            a.btn.btn--white(href="#popup") Peça Agora
+                // CARD-2
+                .card
+                    .card__side.card__side--front
+                        .card__picture.card__picture--5  
+                        h4.card__heading
+                            span.card__heading-span.card__heading-span--5 Hacker 24
+                        .card__details
+                            ul
+                                li 21 marchas
+                                li Aro 24
+                                li Pneu Kenda MTB 24"
+                                li Tamanho 24"
+                                li Peso 12.8kg
+                    .card__side.card__side--back.card__side--back-5
+                        .card__cta
+                            .card__price-box
+                                p.card__price-only Apenas
+                                p.card__price-value $2.000
+                            a.btn.btn--white(href="#popup") Peça Agora
+                // CARD-3
+                .card
+                    .card__side.card__side--front
+                        .card__picture.card__picture--6  
+                        h4.card__heading
+                            span.card__heading-span.card__heading-span--6 Oggi Float Sport
+                        .card__details
+                            ul
+                                li 21 marchas
+                                li Aro 29
+                                li Pneu MTB 29"
+                                li Tamanho 15.5" / 17"
+                                li Peso 14.5kg
+                    .card__side.card__side--back.card__side--back-6
+                        .card__cta
+                            .card__price-box
+                                p.card__price-only Apenas
+                                p.card__price-value $2.290
+                            a.btn.btn--white(href="#popup") Peça Agora

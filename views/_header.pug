@@ -1,0 +1,64 @@
+div(class=`big-box ${moto ?   'big-box--moto' : bike ? 'big-box--bike' : about ? 'big-box--about' : 'nothing-really-special'}`)
+  nav.menu
+    ul.menu__list
+      img(src="/img/logo.jpg" alt="logo")
+      li
+        a(href="/") Inicio
+      li
+        a(href="/motos") Motos
+      li
+        a(href="/bikes") Bikes
+      li
+        a(href="/sobre") Sobre
+      li
+        a.responsive-link(href="#right-bar") ☰
+  if moto
+
+    header.bicycle-header.bicycle-header--moto
+        h4 "Quatro rodas movem o corpo, duas rodas movem a alma!"
+  if bike
+    header.bicycle-header
+        h4 "Não é um esporte, é um estilo de vida"
+
+  if home
+    header.header
+        a.button-white(href="#ser") Explore nossos produtos     ↓
+  if about 
+    section.section-about-us
+      h1#meet-us.heading-secondary.u-center-text.u-margin-bottom-big Conheça a nossa empresa
+      .big-content-box
+        .values
+          h1.heading-harvard.u-margin-bottom-medium Nossos Valores
+          .values__detail.u-margin-bottom-small
+            svg.gradient-icon
+              use(xlink:href="/icons/symbol-defs.svg#icon-clock")
+            p.heading-tertiary.u-def-font-size(style="color: #666;")
+              | Pontualidade
+          .values__detail.u-margin-bottom-small
+            svg.gradient-icon
+              use(xlink:href="/icons/symbol-defs.svg#icon-trending-up")
+            p.heading-tertiary.u-def-font-size(style="color: #666;")
+              | Perseverança
+          .values__detail.u-margin-bottom-small
+            svg.gradient-icon
+              use(xlink:href="/icons/symbol-defs.svg#icon-handshake-o")
+            p.heading-tertiary.u-def-font-size(style="color: #666;")
+              | Confiança
+          .values__detail
+            svg.gradient-icon
+              use(xlink:href="/icons/symbol-defs.svg#icon-star")
+            p.heading-tertiary.u-def-font-size(style="color: #666;")
+              | Qualidade
+        .history
+          h1.heading-harvard.u-margin-bottom-small Sobre a Nigo
+          p.default-text(style="font-size: 1.7rem; color: rgb(145, 142, 142);")
+            | Quando menino, Nigo tinha o sonho de se tornar um piloto de motocross. A sua paixão por motocross o fez abrir uma oficina e ... a história continua aqui
+  
+
+  if error 
+     main.main
+      .error
+          .error__title
+          h2.heading-tertiary Ops! Algo deu errado!   
+          h2.error__emoji 😢 🤯
+          .error__msg= msg

@@ -1,0 +1,70 @@
+extends base
+
+block content
+    section.moto
+        img(src="./img/moto.jpg" alt='moto""')
+        .moto__box
+            h1.heading-primary.u-margin-bottom-medium
+                | Motos e Acessórios de Qualidade
+            p.default-text.u-margin-bottom-small
+                | Quem ama andar de moto sabe que o sentimento de liberdade é único! 🏍
+                | Seja nas viagens e passeios nos finais de semana ou nas trilhas com os
+                | amigos. 😉 A vida é feita de escolhas, qual é a sua: Trilha ou
+                | Asfalto? 😄
+            a.btn__default(href="/motos#models") Veja nossas Motos →
+    section.bike
+        img.bike__main(src="/img/cyclists.jpg" alt="imagens")
+        .u-box-column.bike__flex
+            p#bike-benefit-description.default-text.paragraph.u-margin-bottom-medium
+                | Existem diversos motivos para você ter uma bike! 🚲 Pedalar e sentir a
+                | liberdade ao apreciar belas paisagens ao pôr do sol é apenas um deles.
+                | 😄
+            p.u-center-text.default-text(style="font-size: 1.3rem !important; text-transform: uppercase")
+                | Revenda Autorizada
+            .u-box-row.bike__little-flex
+                img.bike__logo(src="/img/sense.png" alt="sense-logo")
+                img.bike__logo(style="width: 8rem" src="/img/oggi.png" alt="oggi-logo")
+            a.btn__default(href="/bikes#models") Veja nossas Bikes →
+        svg#main-svg
+            use#use(xlink:href="/icons/symbol-defs.svg#icon-circle-left")
+    section#ser.services
+        .u-center-text.u-margin-bottom-medium
+            h1.heading-secondary.u-center-text
+                | Nossos Produtos e Serviços
+        .u-box-column.services__box
+            // INNER
+            .u-box-row.services__inner
+                // CARD HERE
+                .u-box-column.services__card
+                    svg.u-margin-bottom-small
+                        use(xlink:href="/icons/symbol-defs.svg#icon-motorcycle")
+                    h4.heading-harvard.u-margin-bottom-small Motocicletas
+                    p.default-text.paragraph
+                        | Seja para trilha ou asfalto, aqui você poderá encontrar a sua moto tão sonhada.
+                // CARD HERE
+                .u-box-column.services__card
+                    svg.u-margin-bottom-small
+                        use(xlink:href="/icons/symbol-defs.svg#icon-bike")
+                    h4.heading-harvard.u-margin-bottom-small Bikes
+                    p.default-text.paragraph
+                        | Somos a revendedora autorizada a Oggi e da Sense, duas marcas com grande prestígio nacional. Bora pedalar!
+            // INNER
+            .u-box-row.services__inner
+                // CARD HERE
+                .u-box-column.services__card
+                    svg.u-margin-bottom-small
+                        use(xlink:href="/icons/symbol-defs.svg#icon-boxing-glove")
+                    h4.heading-harvard.u-margin-bottom-small
+                        | Acessórios e Vestuário
+                    p.default-text.paragraph
+                        | Aqui você encontra uma ampla variedade de accesórios, para deixar
+                        | a sua viagem mais segura e confortável.
+                // CARD HERE
+                .u-box-column.services__card
+                    svg.u-margin-bottom-small(style="height: 5rem")
+                        use(xlink:href="/icons/symbol-defs.svg#icon-wrench")
+                    h4.heading-harvard.u-margin-bottom-small
+                        | Manutenção Completa
+                    p.default-text.paragraph
+                        | Fazemos a manutenção completa de sua moto ou bike, sempre prestando um
+                        | serviço de qualidade.
